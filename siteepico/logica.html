@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ephico | Lógica</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="imagens/phiicon.ico">
+  </head>
+
+  <body>
+    <div id="conteudo">
+      <div id="sidebar-container"></div>
+
+      <button onclick="topFunction()" id="topbutton" title="Go to top">↑</button>
+
+
+      <header>
+        <h1>2. Lógica</h1>
+      </header>
+
+      <nav>
+        <h2>Índice</h2>
+        <ul>
+          <li><a href="#introducao">2.1) Introdução</a>
+            <ul>
+              <li><a href="#introducao-tema">2.1.1) Introdução ao tema</a></li>
+              <li><a href="#quadrado-logico">2.1.2) Quadrado lógico da oposição</a></li>
+              <li><a href="#valor-verdade">2.1.3) Valor de verdade</a></li>
+              <li><a href="#verdade-validade">2.1.4) Verdade, validade e solidez</a></li>
+            </ul>
+          </li>
+          <li><a href="#logica-proposicional">2.2) Lógica proposicional</a>
+            <ul>
+              <li><a href="#introducao-logica-proposicional">2.2.1) Introdução à lógica proposicional</a></li>
+              <li><a href="#classificacao-proposicoes">2.2.2) Classificação das proposições</a></li>
+              <li><a href="#conectivas-proposicionais">2.2.3) Conectivas proposicionais e a formalização de enunciados</a></li>
+              <!-- <li><a href=""></a></li> -->
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <main>
+        <section id="logica">
+
+          <section id="introducao">
+
+            <section id="introducao-tema">
+
+              <h2>2.1) Introdução:</h2>
+
+              <p>
+                A <strong>lógica</strong> centra-se no conceito de pensamento formal, isto é, no pensamento enquanto processo e estrutura, independentemente dos conceitos pensados. Esta estuda o raciocínio, as formas de inferência e as regras que devem observar para serem válidas.
+              </p>
+
+              <p>
+                A lógica pode ser dividida em duas partes: a <strong>lógica formal</strong>, lógica da forma do argumento, e a <strong>lógica informal</strong>, lógica do conteúdo do argumento.
+              </p>
+
+              <section>
+                <h4>Conceitos importantes:</h4>
+
+                <article class="conceitos">
+                  <h5>Proposição</h5>
+
+                  <p>
+                    Frase declarativa com valor de verdade. Distingue-se de não proposições, como ordens, desejos, exclamações e perguntas.
+                  </p>
+
+                  <p>
+                    &emsp;<em>Exemplo de proposição:</em> "A lua é feita de queijo."
+                  </p>
+
+                  <p>
+                    &emsp;<em>Exemplo de não proposição:</em> "Quem me dera que a lua fosse feita de queijo..."
+                  </p>
+                </article>
+
+                <article class="conceitos">
+                  <h5>Premissa</h5>
+
+                  <p>
+                    Proposição que fundamenta a tese.
+                  </p>
+                </article>
+
+                <article class="conceitos">
+                  <h5>Argumento</h5>
+
+                  <p>
+                    Conjunto de premissas bem organizadas que sustentam uma tese.
+                  </p>
+                </article>
+
+                  <p>&emsp;<em>Exemplo de argumento:</em></p>
+
+                  <ul class="argumento">
+                    <li>Todos os seres humanos são mortais.</li>
+                    <li>Sócrates é um ser humano.</li>
+                    <li>Sócrates é mortal.</li>
+                  </ul>
+
+                  <aside>
+                    <p>
+                      <strong>Observação:</strong> O símbolo ∴ é um <strong>indicador de conclusão</strong> que pode ser lido como "logo", "portanto" ou "concluindo".
+                    </p>
+
+                    <p>
+                      Este argumento é um <strong>silogismo</strong>, um conjunto de duas premissas que sustentam uma conclusão. "Todos os seres humanos são mortais" e "Sócrates é um ser humano" são premissas e "Sócrates é mortal" é a conclusão.
+                    </p>
+                  </aside>
+              </section>
+            </section>
+
+            <section id="quadrado-logico">
+              <h3>2.1.2) Quadrado lógico da oposição:</h3>
+
+              <h4>Relação entre os tipos de proposições:</h4>
+
+              <p>As proposições podem ser divididas em quatro tipos:</p>
+
+              <ul>
+                <li>A - <strong>universais afirmativas</strong> (todo é);</li>
+                <li>E - <strong>universais negativas</strong> (nenhum é);</li>
+                <li>I - <strong>particulares afirmativas</strong> (algum é);</li>
+                <li>O - <strong>particulares negativas</strong> (algum não é).</li>
+              </ul>
+
+              <p>
+                O quadrado lógico da oposição é um diagrama, sob a forma de um quadrado, que expressa as relações lógicas entre proposições categóricas, que utilizam o mesmo sujeito e o mesmo predicado, mas diferem entre si:
+              </p>
+
+              <ul>
+                <li>Pela qualidade, umas são afirmativas e outras são negativas;</li>
+                <li>Pela quantidade, umas são universais e outras particulares.</li>
+              </ul>
+
+              <figure>
+                <img src="imagens/quadrado-logico.png" alt="Diagrama do quadrado lógico da oposição.">
+                <figcaption>
+                  Quadrado lógico da oposição.
+                </figcaption>
+              </figure>
+
+              <aside>
+                <p>
+                  Foi Aristóteles, filósofo grego do século IV a. C., quem pela primeira vez referiu este instrumento lógico.
+                </p>
+              </aside>
+
+              <h4>Relação entre os tipos de proposições:</h4>
+
+              <ul>
+                <li>
+                  <strong>Contraditórias</strong>, se diferem simultaneamente pela qualidade e pela quantidade.
+                  <br>A/O; E/I.
+                </li>
+
+                <li>
+                  <strong>Contrárias</strong>, se, sendo universais, diferirem apenas pela qualidade.
+                  <br>A/E.
+                </li>
+
+                <li>
+                  <strong>Subcontrárias</strong>, se, sendo particulares, diferirem apenas pela qualidade.
+                  <br>I/O.
+                </li>
+
+                <li>
+                  <strong>Subalternas</strong>, se diferirem apenas pela quantidade.
+                  <br>A/I; E/O.
+                </li>
+              </ul>
+
+              <h4>Princípios importantes:</h4>
+
+              <p>
+                Embora óbvios, o quadrado lógico da oposição permite que alcancemos certos princípios que serão importantes mais para a frente:
+              </p>
+
+              <ul>
+                <li>O princípio da identidade;</li>
+                <li>O princípio de não contradição;</li>
+                <li>O princípio do terceiro excluído.</li>
+              </ul>
+
+              <p>
+                O <strong>princípio da identidade</strong> estabelece que algo é idêntico a si mesmo: A é A - "Ursos são ursos". Embora pareça óbvio, no discurso de um debate, há quem mude o significado de uma palavra, infringindo o princípio. Se alguém afirmar categoricamente que todos os seres humanos merecem respeito enquanto seres humanos, não pode, num lance de valor lógico duvidoso, vir posteriormente a dizer que o fulano é uma criatura execrável, que não merece a mínima consideração - é que parece estar a esquecer que "fulano" também é um ser humano.
+              </p>
+
+              <p>
+                O <strong>princípio de não contradição</strong> diz que uma coisa não pode ser e não ser ao mesmo tempo. Não podemos afirmar que A é B e considerar que A não é B ou que há uma parte de A que não é B. Não posso afirmar que um ser é um urso e não é um urso.
+              </p>
+
+              <p>
+                O <strong>princípio do terceiro excluído</strong> diz que entre ser e não ser não há meio termo. Por exemplo, um ser ou é ou não é um urso, não há espaço para uma terceira opção.
+              </p>
+            </section>
+
+            <section id="valor-verdade">
+              <h3>2.1.3) O papel do quadrado lógico da oposição na avaliação do valor de verdade das teses:</h3>
+
+              <p>
+                Nas <strong>teses contraditórias</strong>, não podemos aceitar que as duas sejam verdadeiras pois, se o fizéssemos, estaríamos a entrar em contradição. Isto é particularmente importante porque para refutar um argumento, recorremos à premissa contrária daquela que queremos atacar, visto que somente uma das opções pode ser verdadeira.
+              </p>
+
+              <p>
+                Nas <strong>teses contrárias</strong>, não podemos considerar que ambas sejam verdadeiras, porque caso contrário estaríamos a entrar em contradição, mas podemos admitir que ambas sejam falsas, porque aí não há nenhuma contradição. Por exemplo, numa turma pode haver alguns alunos estudiosos e alguns alunos não estudiosos. Aí, podemos negar juntamente que todos os alunos são estudiosos e que nenhum aluno é estudioso.
+              </p>
+
+              <p>
+                Nas <strong>teses subcontrárias</strong>, podem ser as duas verdadeiras, porque se uma parte é algo, a outra parte também tem de ser algo. No entanto, não podem ser as duas falsas. Se uma for verdadeira, nada poderei saber sobre a verdade da outra. Mas, se uma for falsa, a outra tem de ser necessariamente verdadeira.
+              </p>
+
+              <p>
+                Nas <strong>teses subalternas</strong>, se a universal for verdadeira, a particular é necessariamente verdadeira. Se a universal for falsa, nada posso concluir sobre a particular. Se a particular for verdadeira, nada posso concluir sobre a universal. Se a particular for falsa, a universal também tem de ser falsa.
+              </p>
+            </section>
+
+            <section id="verdade-validade">
+              <h3>2.1.4) Verdade, validade e solidez:</h3>
+
+              <p>
+                Quando procuramos defender perante outras pessoas determinados pontos de vista (<strong>teses</strong>), recorremos a argumentos e pode acontecer que essas pessoas tentem refutar os nossos argumentos, isto é, lhes coloquem objeções. Para podermos debater, convém conhecer e saber utilizar os instrumentos adequados que permitem avaliar os argumentos. É fundamental diferenciar e perceber os conceitos de <strong>verdade, validade e solidez</strong>.
+              </p>
+
+              <section>
+                <h4>Conceitos importantes:</h4>
+
+                <article class="conceitos">
+                  <h5>Verdade</h5>
+                  <p>
+                    A adequação entre o que pensamos acerca da realidade e aquilo que a realidade realmente é, seguindo os filósofos que afirmam que a verdade é a adequação entre o pensamento e o ser.
+                  </p>
+                </article>
+
+                <p>
+                  Curiosamente, este conceito é algo que não se aplica aos argumentos, mas sim às proposições. Por exemplo, sobre um sujeito é possível atribuir vários predicados, no entanto, somente alguns predicados são verdadeiros em relação ao sujeito:
+                </p>
+
+                  <ul>
+                    <li>Alguns ursos são pardos (verdadeiro);</li>
+                    <li>Ursos são bípedes (falso);</li>
+                    <li>Ursos são aves (falso).</li>
+                  </ul>
+                  
+                  <p>O critério para decidir a verdade da proposição é a adequação com a realidade e, no caso de não haver adequação, estas são consideradas falsas.</p>
+
+                  <article class="conceitos">
+                    <h5>Validade</h5>
+                    <p>
+                      Propriedade de um argumento cuja conclusão decorre logicamente das suas premissas.
+                    </p>
+
+                  </article>
+                  <p>
+                    Diferentemente da verdade, a validade é propriedade dos argumentos e encontra-se garantida se o transito das premissas do argumento para a conclusão for realizado de acordo com as regras lógicas (vamos explorá-las a seguir). Observaremos os seguintes argumentos:
+                  </p>
+                  
+                  <p>
+                    A - Os ursos têm as unhas afiadas para caçar peixe. Ora, o Noa Santos Castanho é um urso. Logo, o Noa Santos Castanho tem as unhas afiadas para caçar peixe.
+                  </p>
+
+                  <p>
+                    B - Os ursos têm as unhas afiadas para caçar peixe. O Noa Santos Castanho tem as unhas afiadas para caçar peixe. Logo, o Noa Santos Castanho é um urso.
+                  </p>
+
+                  <p>
+                    Embora semelhantes, estes argumentos têm formas diferentes, sendo o argumento A válido e o argumento B inválido. Não é pelos ursos terem as unhas afiadas para caçar peixe que todo o animal que tenha unhas afiadas para caçar peixe seja um urso.
+                  </p>
+
+                  <p>
+                    Ainda mais, reparem que Noa Santos Castanho não é um nome habitual para um urso, mas sim para um ser humano. Aqui encontramos um argumento com uma forma válida, mas com um valor de verdade questionável. É aqui que introduzimos o conceito de <strong>solidez</strong>.
+                  </p>
+
+                  <article class="conceitos">
+                    <h5>Solidez</h5>
+                    <p>
+                      Atributo dos argumentos. Argumento sólido é aquele cujas premissas são verdadeiras e a forma é válida em simultâneo. Se as premissas forem verdadeiras e o argumento seguir uma forma válida, a conclusão será necessariamente verdadeira.
+                    </p>
+                  </article>
+              </section>
+            </section>
+          </section>  
+
+          <section id="logica-proposicional">
+            <h2>2.2) Lógica proposicional</h2>
+            <section id="introducao-logica-proposicional">
+              <h3>2.2.1) Introdução à lógica proposicional:</h3>
+              <p>
+                Todos nós retiramos frequentemente conclusões sobre algo. Podemos concluir, por exemplo, que o estudo da filosofia leva ao desenvolvimento e fortalecimento do espírito crítico. Quando concluímos algo a partir de dados anteriores estamos a raciocinar (ou a <strong>inferir</strong>), dando origem a um argumento. Mas serão esses raciocínios que produzimos realmente corretos, isto é, válidos?
+              </p>
+
+              <p>
+                É neste campo que a lógica, no domínio <strong>formal</strong>, assume relevância, permitindo responder às questões anteriores. Se antes vimos apenas alguns princípios elementares da lógica que nos permitiram avaliar de uma forma geral a validade dos argumentos, iremos agora debruçar-nos sobre uma parte específica dela, nomeadamente a <strong>lógica proposicional</strong>. Esta, ao criar uma linguagem simbólica, a fim de evitar os equívocos da linguagem natural, procurou determinar através de um alcalculo lógico o valor de verdade das proposições completar e das inferências lógicas.
+              </p>
+
+              <section>
+                <h4>Conceitos importantes:</h4>
+                <article class="conceitos">
+                  <h5>Inferência</h5>
+                  <p>
+                    Operação mental que permite retirar uma conclusão a partir da relação estabelecida entre os dados interiores, isto é, entre as premissas.
+                  </p>
+                </article>
+
+                <article class="conceitos">
+                  <h5>Lógica proposicional</h5>
+                  <p>
+                    Sistema formal que se dedica à análise das proposições que constituem um argumento.
+                  </p>
+                </article>
+              </section>
+            </section>
+
+            <section id="classificacao-proposicoes">
+              <h3>2.2.2) Classificação das proposições:</h3>
+              <p>
+                Podemos classificar as proposições em dois tipos: as <strong>proposições simples</strong> e as <strong>proposições complexas</strong>.
+              </p>
+
+              <section>
+                <h4>Conceitos importantes:</h4>
+                <article class="conceitos">
+                  <h5>Proposições simples</h5>
+                  <p>
+                    Proposições que não se podem decompor em mais proposições.
+                  </p>
+                </article>
+                <article class="conceitos">
+                  <h5>Proposições complexas</h5>
+                  <p>
+                    Proposições que são constituídas pela combinação de várias proposições simples, podendo ser dividida. Podemos identificá-las através de conectivas.
+                  </p>
+                </article>
+
+                <p>
+                  Na expressão "Os ursos gostam de mel e de salmão" estamos perante uma proposição, na medida em que explrime um juízo acerca da realidade e tem um valor de verdade, no entanto, poderíamos decompô-la em duas proposições:
+                </p>
+                <ul>
+                  <li>Proposição 1 - "Os ursos gostam de mel";</li>
+                  <li>Proposição 2 - "Os ursos gostam de salmão.</li>
+                </ul>
+                <p>
+                  Na primeira formulação, temos uma proposição complexa, pois atribui-se ao urso dois predicados ("gostar de mel" e "gostar de salmão"), neste caso juntos pela palavra "e" (conjunção ).
+                </p>
+              </section>
+
+              <p>
+                Sendo a lógica proposicional um sistema formal, o conteúdo das expressões que compõem o argumento é em si menos relevante, dado que a analise é centrada na estrutura do raciocínio. Para eliminar a ambiguidade da linguagem natural, recorre-se à <strong>linguagem simbólica</strong>. Assim, as proposições simples são formalizadas pelas letras <strong>P, Q, R</strong> e assim sucessivamente, denominadas de <strong>variáveis</strong>. Ao fazer o <strong>dicionário</strong> (simplificar as proposições ao máximo e substutuí-las por letras), é importante colocar o verbo no <strong>infinitivo</strong> e sempre na <strong>afirmativa</strong>. Por exemplo, "Não choveu e o chão está molhado" → ¬"Chover" + "O chão estar molhado".
+              </p>
+            </section>
+
+            <section id="conectivas-proposicionais">
+              <h3>2.2.3) Conectivas proposicionais e a formalização de enunciados:</h3>
+              
+              <p>
+                As <strong>conectivas</strong> são instrumentos que permitem aglomerar proposições simples em proposições complexas. Expressões como "e", "ou", "se... então" são exemplos de conectivas. A negação, apesar de não estabelecer ligação entre proposições, também é uma conectiva.
+              </p>
+              <p>
+                Iremos apenas estudar as <strong>conectivas verofuncionais</strong>, isto é, as conectivas que, ligadas as proposições, permitem verificar o <strong>valor de verdade</strong> do enunciado sem recorrer a mais nenhuma informação que não seja o valor de verdade das proposições simples.
+              </p>
+              <p>
+                O seguinte quadro descreve quais são, a sua leitura e a simbologia:
+              </p>
+
+              <table border="1">
+                <caption>Conectivas e símbolos lógicos</caption>
+                <thead>
+                <tr>
+                  <td>Designação</td>
+                  <td>Leitura</td>
+                  <td>Formalização</td>
+                  <td>Alternativa</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Negação</td>
+                  <td>não/nunca/nem/é falso que</td>
+                  <td>¬P</td>
+                  <td>~P</td>
+                </tr>
+                <tr>
+                  <td>Conjunção</td>
+                  <td>e/mas/,/também</td>
+                  <td>P ∧ Q</td>
+                  <td>P & Q</td>
+                </tr>
+                <tr>
+                  <td>Disjunção Inclusiva</td>
+                  <td>ou</td>
+                  <td>P ∨ Q</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Disjunção Exclusiva</td>
+                  <td>ou... ou</td>
+                  <td>P V̇ Q</td>
+                  <td>P V̲ Q</td>
+                </tr>
+                <tr>
+                  <td>Condicional (implicação)</td>
+                  <td>se... então/se/implica que</td>
+                  <td>P → Q</td>
+                  <td>P ⇒ Q</td>
+                </tr>
+                <tr>
+                  <td>Bicondicional (equivalência)</td>
+                  <td>se e só se/equivalente</td>
+                  <td>P ↔ Q</td>
+                  <td>P ⇔ Q</td>
+                </tr>
+                </tbody>
+              </table>
+            </section>
+
+          </section>
+
+        </section>
+      </main>
+    </div>
+    <script src="js/sidebar.js"></script>
+    <script src="js/button.js"></script>
+  </body>
+</html>
