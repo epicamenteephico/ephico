@@ -20,11 +20,22 @@
       </header>
 
       <main>
-        
+        <p>Todos os conceitos importantes num só lugar, por ordem alfabética.</p>
+
+        <input type="search" id="pesquisa" class="glossario-pesquisa"
+              placeholder="Pesquisar um conceito..." aria-label="Pesquisar no glossário">
+
+        <p id="sem-resultados" hidden>Nenhum conceito encontrado.</p>
+
+        <section id="lista-glossario">
+          <p id="a-carregar">A carregar conceitos...</p>
+        </section>
       </main>
     </div>
 
     <script src="js/sidebar.js"></script>
     <script src="js/button.js"></script>
+    <script src="js/glossario.js"></script>
+
   </body>
 </html>
