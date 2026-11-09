@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <p>Lorem ipsum dolor sit amet...</p>
             </div>
         </details>
-
+        
         <details name="sidebar-element">
             <summary>Lógica</summary>
             <div class="panel">
@@ -54,6 +54,8 @@ document.addEventListener("DOMContentLoaded", function() {
             <summary>Justiça</summary>
             <div class="panel"><p>Lorem ipsum dolor sit amet...</p></div>
         </details>
+
+        <a href="glossario.html" class="sidebar-element">teste</a>
     </div>`;
 
     const container = document.getElementById('sidebar-container');
