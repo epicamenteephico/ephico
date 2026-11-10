@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Grenze+Gotisch:wght@600&display=swap');
 
 :root {
-    --accordion-text: #f1ca1c;
+    --accordion-text: #ebe4c5;
     --accordion-background: #f0865c;
     --accordion-panel: #f2f2f1;
     --sidebar-background: #9b240c;
@@ -20,6 +20,11 @@
     --banner-background: #f2f2f1;
     --table-header-background: #ecd776;
     --table-body-background: #ebe4c5;
+    --caixa-normal-background: #f0865c;
+    --caixa-final-background: #9b240c;
+    --caixas-texto: #ebe4c5;
+    --seta: #9b240c;
+    --borda: #f1ca1c;
 }
 
 [data-theme="christmas"] {
@@ -96,6 +101,8 @@ th, td {
     color: var(--accordion-text);
     border: none;
     margin-bottom: 5px;
+    border-radius: 12px;
+    border: 2px solid var(--borda);
 }
 
 .accordion summary {
@@ -177,6 +184,8 @@ th, td {
   max-width: 140px;
   height: auto;
   margin-bottom: 24px;
+  border-radius: 12px;
+  border: 2px solid var(--borda);
 }
 
 .accordion .logo-container {
@@ -305,4 +314,51 @@ thead {
 
 tbody{
   background-color: var(--table-body-background);
+}
+
+
+.resumo {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 25px;
+  color: var(--caixas-texto);
+}
+
+.resumo p {
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.caixa, .caixa-final {
+  padding: 18px 22px;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 1.6;
+  border: 2px solid var(--borda);
+}
+
+.caixa p, .caixa-final p {
+  color: var(--caixas-texto)
+}
+
+.caixa {
+  background-color: var(--caixa-normal-background);
+  font-size: 22px;
+}
+
+.caixa-final {
+  background-color: var(--caixa-final-background);
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.seta {
+  text-align: center;
+  font-size: 30px;
+  color: var(--seta);
+  margin: 12px 0;
+}
+
+.resumo p {
+  font-size: 23px
 }

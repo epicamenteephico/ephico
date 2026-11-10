@@ -55,7 +55,16 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="panel"><p>Lorem ipsum dolor sit amet...</p></div>
         </details>
 
-        <a href="glossario.html" class="sidebar-element">teste</a>
+        <details name="sidebar-element">
+            <summary>Epistemologia</summary>
+            <div class="panel">
+                <a href="epistemologia.html">teste magano tas a ler isto</a>
+            </div>
+        </details>
+
+        <details name="sidebar-element">
+            <summary>Glossário</summary>
+            <div class="panel"><a href="glossario.html">Glossário</a></div>
     </div>`;
 
     const container = document.getElementById('sidebar-container');

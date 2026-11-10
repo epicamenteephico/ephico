@@ -1,5 +1,7 @@
-// Páginas onde procurar conceitos. Acrescenta aqui as novas páginas.
-const PAGINAS = ["logica.html"];
+// const = fazer constante
+// escrever um nome todo em maiúsculas é uma convenção que significa
+// que queremos que o valor seja imutável
+const PAGINAS = ["logica.html"]; 
 
 const lista = document.getElementById("lista-glossario");
 const campo = document.getElementById("pesquisa");
