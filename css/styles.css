@@ -36,7 +36,7 @@
     --link-hover: #d4af37;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Grenze Gotisch', serif;
   font-weight: 600;
 }
@@ -79,6 +79,12 @@ h5 {
     font-size: 22px;
     margin-top: 22px;
     margin-bottom: 10px;
+}
+
+h6 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 8px;
 }
 
 p {
@@ -218,7 +224,7 @@ th, td {
   margin: 16px 0;
 }
 
-.conceitos h5 {
+.conceitos h6 {
   margin-top: 0;
   margin-bottom: 6px;
   color: var(--conceitos-titulo);
@@ -242,6 +248,7 @@ th, td {
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
+  transform: rotate(270deg);
 }
 
 #topbutton:hover {
@@ -293,8 +300,6 @@ th, td {
   max-width: 220px;
   height: auto;
   mix-blend-mode: multiply;
-  -webkit-mask-image: radial-gradient(closest-side, #000 55%, transparent 100%);
-  mask-image: radial-gradient(closest-side, #000 55%, transparent 100%);
 }
 
 .banner h1 {
@@ -357,8 +362,96 @@ tbody{
   font-size: 30px;
   color: var(--seta);
   margin: 12px 0;
+  transform: rotate(90deg);
 }
 
 .resumo p {
   font-size: 23px
+}
+
+.tabela-categoria {
+  background-color: var(--table-header-background);
+  font-weight: bold;
+}
+
+.esquema {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+}
+
+.circulo {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 2px solid var(--borda);
+  background-color: var(--caixa-normal-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.circulo p {
+  color: var(--caixas-texto);
+}
+
+.setas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  font-size: 55px;
+  color: var(--seta);
+}
+
+.seta-baixo {
+  transform: rotate(180deg);
+}
+
+.biografia {
+  background-color: var(--table-body-background);
+  border: 2px solid var(--borda);
+  border-left: 6px solid var(--conceitos-barra);
+  border-radius: 12px;
+  padding: 16px 24px 20px;
+  margin: 24px 0;
+  overflow: auto; /* contém o desenho flutuante */
+}
+
+.biografia h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--conceitos-titulo);
+}
+
+.biografia p {
+  margin: 0;
+  text-align: justify;
+}
+
+/* Opcional: para quando tiveres o desenho (<img class="biografia-desenho" ...>) */
+.biografia-desenho {
+  float: right;
+  width: 150px;
+  height: auto;
+  margin: 0 0 10px 20px;
+  border-radius: 10px;
+  border: 2px solid var(--borda);
+}
+
+@media screen and (max-width: 600px) {
+  .biografia-desenho {
+    float: none;
+    display: block;
+    margin: 0 auto 14px;
+  }
 }

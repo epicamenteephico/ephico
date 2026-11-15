@@ -13,64 +13,406 @@
     <div id="conteudo">
       <div id="sidebar-container"></div>
 
-      <button onclick="topFunction()" id="topbutton" title="Voltar ao topo">↑</button>
+      <button onclick="topFunction()" id="topbutton" title="Voltar ao topo">➜</button>
 
       <header>
         <h1>6. Epistemologia</h1>
       </header>
 
       <nav>
-        <a href="#descartes">6.2) René Descartes, a resposta racionalista</a>
+        <a href="#tema-problema">6.1) O problema da definição de conhecimento</a>
         <ul>
-          <li><a href="#introducao">6.2.1) A teoria racionalista</a></li>
-          <li><a href="#tipos-conhecimento">6.2.2) Conhecimento a priori e a posteriori</a></li>
-          <li><a href="#cogito">6.2.3) O cogito</a></li>
-          <li><a href="#existencia-deus">6.2.4) A existência de Deus</a></li>
-          <li><a href="#criticas-descartes">6.2.5) Objeções ao racionalismo cartesiano</a></li>
+          <li><a href="#introducao-problema">6.1.1) A definição tradicional de conhecimento</a></li>
+          <li><a href="#criticas-cvj">6.1.2) Os contraexemplos de Gettier</a></li>
+        </ul>
+        <a href="#desafio-cetico">6.2) O desafio cético: principais argumentos</a>
+        <ul>
+          <li><a href="#clarificacao-problema">6.2.1) Clarificação do problema</li>
+          <li><a href="#argumentos-ceticos">6.1.2) Os principais argumentos céticos</li>
+          <li><a href="#criticas-ceticismo">6.1.3) Objeções ao ceticismo</li>
+        </ul>
+        <a href="#descartes">6.3) René Descartes, a resposta racionalista</a>
+        <ul>
+          <li><a href="#introducao-descartes">6.3.1) A teoria racionalista</a></li>
+          <li><a href="#tipos-conhecimento">6.3.2) Conhecimento <em>a priori</em> e <em>a posteriori</em></a></li>
+          <li><a href="#cogito">6.3.3) O cogito</a></li>
+          <li><a href="#existencia-deus">6.3.4) A existência de Deus</a></li>
+          <li><a href="#criticas-descartes">6.3.5) Objeções ao racionalismo cartesiano</a></li>
+        </ul>
+        <a href="#hume">6.4) David Hume, a resposta empirista</a>
+        <ul>
+          <li><a href="#introducao-hume">6.4.1) A teoria empirista</a></li>
+          <li><a href="#impressoes-ideias">6.4.2) Impressões e ideias</a></li>
+          <li><a href="#dicotomia">6.4.3) Relações de ideias e questões de facto</a></li>
+          <li><a href="#justificacao-questoes-facto">6.4.4) A justificação das questões de facto</a></li>
+          <li><a href="#criticas-hume">6.4.5) Objeções ao empirismo humeano</a></li>
         </ul>
       </nav>
 
       <main>
         <section id="epistemologia">
           
-          <section id="descartes">
-            <h2>6.2) René Descartes, a resposta racionalista</h2>
-            <section id="introducao">
-              <h3>6.2.1) A teoria racionalista</h3>
+          <section id="tema-problema">
+            <h2>6.1) O problema da definição de conhecimento</h2>
+            <section id="introducao-problema">
+              <h3>6.1.1) A definição tradicional de conhecimento</h3>
+
+              <section>
+                <h5>Conceitos importantes:</h5>
+                <article class="conceitos">
+                  <h6>Crença</h6>
+                  <p>
+                    Uma crença é o estado mental em que uma pessoa assume que algo é verdadeiro, real ou provável, mesmo sem provas científicas definitivas.
+                  </p>
+                </article>
+
+                <article class="conceitos">
+                  <h6>Conhecimento</h6>
+                  <p>
+                    Objeto de estudo da epistemologia. Desde Platão, crença verdadeira justificada (CVJ).
+                  </p>
+                </article>
+              </section>
+
+              <p>
+                Em filosofia, quando queremos definir um conceito, procuramos as condições <strong>necessárias</strong> e <strong>suficientes</strong> (clica <a>aqui</a> se já estiveres esquecid@). A nossa primeira tarefa será precisamente esta: descobrir quais são as condições necessárias e suficientes para definir conhecimento.
+              </p>
+              
+              <section id="sentidos-conhecer">
+                <h4><u>Diferentes sentidos de conhecer</u></h4>
+
+                <table border="1">
+                  <caption>Diferentes sentidos de conhecer</caption>
+                  <thead>
+                    <tr>
+                      <th>Tipo de conhecimento</th>
+                      <th>Descrição</th>
+                      <th>Exemplo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tabela-categoria">Saber-que ou conhecimento proposicional</td>
+                      <td>Saber que se expressa em conteúdos ou pensamentos que são portadores de verdade (conhecimento de factos ou de verdades).</td>
+                      <td>Sei que Sísifo foi condenado a empurrar uma enorme pedra montanha acima.</td>
+                    </tr>
+                    <tr>
+                      <td class="tabela-categoria">Conhecimento por contacto</td>
+                      <td>Conhecimento que implica estar ou ter estado em contacto direto com o objeto (conhecimento de coisas ou lugares)</td>
+                      <td>Conheço a montanha em que Sísifo é obrigado a empurrar a pedra.</td>
+                    </tr>
+                    <tr>
+                      <td class="tabela-categoria">Saber-como ou conhecimento por aptidão</td>
+                      <td>Saber relacionado com aptidões ou habilidades intelectuais, físicas ou práticas (saber-fazer).</td>
+                      <td>Sísifo sabe empurrar pedras montanha acima.</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <p>
+                  Apesar de haver diversos tipos de conhecimento, o tipo que nos interessa investigar é o <strong>conhecimento proposicional</strong> ou <strong>saber-que</strong>. É a ele que nos referiremos neste processo de clarificação, porque nos permite analisar com maior precisão as condições que tornam uma crença num verdadeiro conhecimento
+                </p>
+
+                <p>
+                  Tradicionalmente, define-se conhecimento como sendo <strong>crença verdadeira justificada</strong>. Esta definição, também conhecida como <strong>teoria CVJ</strong> ou <strong>definição</strong>, remonta à Grécia Antiga e a Platão, e é referida na sua obra <em>Teeteto</em>.
+                </p>
+
+                <section class="biografia">
+                  <h4>Platão</h4>
+                  <img class="biografia-desenho" src="imagens/placeholder.png" alt="Desenho Platão">
+                  <p>
+                    Platão foi um importante filósofo da Grécia Antiga, nascido em Atenas, por volta de 427 a.C. O seu nome verdadeiro era Aristócles, mas ficou conhecido como Platão (de platon, largo), graças à sua compleição física atlética. Foi discípulo de Sócrates e professor de Aristóteles, tendo influenciado profundamente a filosofia ocidental. Fundou a Academia de Atenas, uma das primeiras instituições de ensino superior do mundo ocidental. Nas suas obras, abordou temas como a justiça, a política, a educação, a verdade e o conhecimento. Uma das suas ideias mais conhecidas é a Teoria das Ideias, segundo a qual o mundo que vemos é apenas uma representação imperfeita de uma realidade perfeita e imutável. Entre as suas obras mais famosas destacam-se A República, O Banquete e Fédon. Platão morreu em Atenas, por volta de 347 a.C., deixando um legado fundamental para a história da filosofia.
+                  </p>
+                </section>
+              </section>
+
+              <section id="crenca">
+                <h4><u>Crença e conhecimento</u></h4>
+                <p>
+                  Uma crença é um tipo particular de estado mental. Acreditar que <em>Sísifo é infeliz</em> é representar na nossa mente o mundo de uma dada forma. Todo o conhecimento tem, por isso, de ser crença. A crença é uma condição necessária, mas não suficiente para o conhecimento. Saber sem acreditar é uma impossibilidade, mas é possível crer em falsidades. Por exemplo, eu posso acreditar que <em>Os golfinhos são peixes</em>, enquanto que a realidade aponta que é um mamífero. 
+                </p>
+              </section>
+
+              <section id="verdade">
+                <h4><u>Verdade e conhecimento</u></h4>
+                <p>
+                  Para haver conhecimento, é necessário que as nossas crenças sejam verdadeiras. A crença têm conteúdo proposicional, podendo então ser verdadeiras ou falsas. Será verdadeira se, e só se, tal crença for um <strong>facto</strong>. Estamos perante uma crença falsa, caso a nossa crença não esteja em conformidade com a verdade. Todo o conhecimento é crença verdadeira, ou, por outras palavras, a verdade é uma condição necessária para o conhecimento. Mas será esta suficiente? Vejamos o seguinte exemplo:
+                </p>
+
+                <ul>
+                  <li>O Martim Maganinho Bispo atira uma moeda ao ar e pensa com total convicção que vai sair cara. Revela-se que realmente caiu cara. A crença é verdadeira.</li>
+                </ul>
+                  
+                <p>
+                  Poderá isto ser considerado conhecimento? <strong>Não</strong>, visto que a verdade da crença foi mero fruto do acaso. Não havia qualquer evidência, cálculo físico ou razão válida para sustentar essa afirmação antes de a moeda cair.
+                </p>
+              </section>
+
+              <section id="justificacao">
+                <h4><u>Justificação e conhecimento</u></h4>
+
+                <p>
+                  Tal como a crença e a verdade são condições necessárias, mas não suficientes para conhecimento, o mesmo aplica-se à justificação. Porquê? Uma justificação, ou seja, uma razão para acreditar, é geralmente constituída por uma premissa ou conjunto de premissas que aumentam a probabilidade de a crença, a conclusão, ser plausível. No entanto, tais premissas podem ser falsidades. Durante séculos, acreditou-se, falsamente, que a terra estava no centro do universo. Esta crença era justificada pela observação da suposta rotação do Sol à volta da terra. No entanto, não era conhecimento porque é uma falsidade.
+                </p>
+
+                <p>
+                  Concluindo, algo é conhecimento se e só se for crença verdadeira justificada. Mas será que esta definição é suficiente?
+                </p>
+              </section>
+            </section>
+
+            <section id="criticas-cvj">
+              <h3>6.1.2) Os contraexemplos de Gettier</h3>
 
               <section class="biografia">
-                <h3>René Descartes</h3>
+                <h4>Edmind Gettier</h4>
+                <img class="biografia-desenho" src="imagens/placeholder.png" alt="Desenho Edmund Gettier">
+                <p>
+                  Edmund Gettier (1927-2021) foi um filósofo norte-americano, nascido em Baltimore, nos Estados Unidos. Ficou conhecido pela sua contribuição para a epistemologia, área da Filosofia que estuda o conhecimento. Em 1963, publicou o artigo <em>Is Justified True Belief Knowledge?</em> ("Será a crença verdadeira justificada conhecimento?"), no qual questionou a definição tradicional de conhecimento como uma crença verdadeira justificada. Através de exemplos, demonstrou que uma pessoa pode ter uma crença verdadeira e justificada sem realmente possuir conhecimento. As suas ideias ficaram conhecidas como Problema de Gettier e tiveram um grande impacto na Filosofia contemporânea, levando vários filósofos a procurar novas definições de conhecimento. Gettier tornou-se, assim, uma figura fundamental no debate filosófico sobre o que significa verdadeiramente saber alguma coisa.
+                </p>
+              </section>
+
+              <p>
+                Gettier argumenta que crença, a verdade e a justificação, apesar de serem condições suficientes para o conhecimento, são <strong>insuficientes</strong> para o definir. Ou seja, falta alguma condição que não está na definição CVJ. Vejamos o seguinte exemplo:
+              </p>
+
+              <p>
+                O Martim Maganinho Bispo entra em uma sala com um relógio de parede que marca exatamente 14h30. Ele tem todos os motivos para acreditar que são 14h30 porque aquele relógio tem trabalhado bem ao longo dos anos. E realmente eram 14h30. No entanto, o relógio estava sem pilha.
+              </p>
+
+              <p>
+                Esta crença verdadeiramente justificada é fruto do acaso. Um relógio estragado está certo duas vezes por dia. Assim, argumenta Gettier que não é por ser CVJ que seja conhecimento.
+              </p>
+
+              <p>
+                Infelizmente, até hoje não há consenso entre os filósofos sobre a definição correta de conhecimento. Gettier limitou-se a apresentar contraexemplos à teoria CVJ.
+              </p>
+            </section>
+          </section>
+
+          <section id="desafio-cetico">
+            <h2>6.2) O desafio cético: principais argumentos</h2>
+
+            <section id="clarificacao-problema">
+              <h3>6.2.1) Clarificação do problema</h3>
+              <section>
+                <h5>Conceitos importantes</h5>
+                <article class="conceitos">
+                  <h6>Ceticismo</h6>
+                  <p>
+                    Perspectiva que nega, total ou parcialmente, a possibilidade do conhecimento.
+                  </p>
+                </article>
+              </section>
+
+              <p>
+                Tal como no determinismo, há duas possibilidades: <strong>ceticismo radical</strong> ou <strong>pirrónico</strong> e <strong>ceticismo moderado</strong> ou <strong>mitigado</strong>.
+              </p>
+
+              <p>
+                O ceticismo localizado (<strong>moderado ou mitigado</strong>) afirma que alguns juízos são falíveis e que não podemos ter conhecimento sobre certas categorias de factos (as outras mentes, Deus, o futuro, ...).
+              </p>
+
+              <p>
+                O ceticismo <strong>radical ou pirrónico</strong> afirma que não podemos saber o que quer que seja acerca do mundo. Nenhuma das nossas crenças está suficientemente justificada para poder contar como conhecimento, restando-nos apenas a <strong>suspensão do juízo</strong>. Esta perspectiva é popularizada por Pirro de Élis.
+              </p>
+
+              <section class="biografia">
+                <h4>Pirro de Élis</h4>
+                <img class="biografia-desenho" src="imagens/placeholder.png" alt="Desenho Pirro de Élis">
+                <p>
+                  Pirro de Élis (360 a.C. - 270 a.C.) foi um filósofo grego da Antiguidade, fundador do Pirronismo, uma corrente filosófica que deu origem ao ceticismo. Defendia que não podemos ter a certeza absoluta sobre a verdade das coisas e que, por isso, devemos evitar fazer julgamentos definitivos. Segundo Pirro, ao suspendermos os nossos juízos, conseguimos alcançar a tranquilidade da mente. Uma das histórias mais conhecidas sobre Pirro aconteceu durante uma viagem de barco. Conta-se que, durante uma tempestade, enquanto os restantes passageiros estavam assustados, Pirro manteve-se tranquilo e apontou para um porco que continuava a comer calmamente, usando-o como exemplo de como se deveria viver sem perturbações, mesmo perante situações difíceis.
+                </p>
+              </section>
+
+              <p>
+                Independentemente do tipo de ceticismo que estivermos a falar, não o podemos ignorar pois levantam questões importantes acerca da possibilidade do conhecimento. Enfrentar o problema da possibilidade do conhecimento é, pois, procurar responder ao <strong>desafio cético</strong>.
+              </p>
+
+              <p>
+                Os céticos não duvidam da definição de conhecimento, mas sim da sua <strong>possibilidade</strong>. Afirmam que algumas das nossas crenças podem ser verdadeiras, no entanto rejeitam a possibilidade de as justificar. O seguinte argumento resume a perspectiva cética:
+              </p>
+
+              <ul class="argumento">
+                <li>Se S sabe que P, então não é possível que S esteja enganado acerca de P.</li>
+                <li>É possível que S esteja enganado acerca de P.</li>
+                <li>Logo, S não sabe que P</li>
+              </ul>
+              <aside>
+                <p>
+                  <strong>Observação:</strong> este argumento segue a forma <em>modus tollens</em> (P → ¬Q, Q ∴ ¬P).
+                </p>
+              </aside>
+
+              <p>
+                Como não podemos questionar a sua estrutura (validade), teremos de questionar o seu valor de verdade para concluir se é um bom ou mau argumento (solidez).
+              </p>
+            </section>
+
+            <section id="argumentos-ceticos">
+              <h3>6.1.2) Os principais argumentos céticos</h3>
+
+              <p>
+                Os argumentos céticos que vamos explorar são os seguintes:
+              </p>
+              <ul>
+                <li>O argumento da regressão da justificação;</li>
+                <li>O argumento da ilusão dos sentidos;</li>
+                <li>O argumento do sonho;</li>
+                <li>O argumento do cérebro numa cuba.</li>
+              </ul>
+
+              <section id="regressao-justificacao">
+                <h4><u>O argumento da regressão da justificação</u></h4>
+
+                <p>
+                  Dissemos que há conhecimento quando as nossas crenças verdadeiras estão justificadas, isto é, quando temos boas razões para acreditar que as crenças que temos são verdadeiras. Acontece que apelar a boas razões para justificar uma dada crença é suportá-la em outras crenças que possuímos. E isto levanta um desafio importante, o da regressão da justificação. Vejamos um exemplo:
+                </p>
+
+                <p>
+                  O relógio está uma hora atrasado porque houve alteração do horário do inverno para o horário do verão. Houve esta alteração porque estamos no último domingo de março e as convenções do tempo estabelecem que, no hemisfério norte, nesta data, os relógios adiantam uma hora. Os relógios adiantam uma hora para ....
+                </p>
+
+                <p>
+                  De acordo com o ceticismo, quando pretendemos justificaar uma crença por intermédio de outras crenças estão disponíveis apenas <strong>três alternativas (trilema de Agripa)</strong>
+                </p>
+
+                <ul>
+                  <li>Ou <strong>regredimos infinitamente</strong> na cadeia de jusficicações, justificando o porquê dos relógios adiantarem uma hora, justificando o porquê dessa justificação, ...;</li>
+                  <li>Ou paramos arbitrariamente numa <strong>crença não justificada</strong> (dogma ou axioma), justificando que é-nos benéfico esta mudança de hora porque temos mais horas acordados com luz natural e a luz natural é boa para o nosso ciclo de sono e para poupar luz.</li>
+                  <li>Ou <strong>raciocinamos em círculo</strong>, justificando que se os relógios não fossem adiantados, continuariam atrasados uma hora, o que demonstra que estão atrasados porque ainda não foram adiantados, sendo necessário adiantá-los porque estão atrasados.</li>
+                </ul>
+
+                <p>
+                  Segundo os céticos, nenhuma destas opções resolve o problema.
+                </p>
+              </section>
+
+              <section id="ilusao-sentidos">
+                <h4><u>Argumento da ilusão dos sentidos</u></h4>
+
+                <section>
+                  <h5>Conceitos importantes:</h5>
+                  <article class="conceitos">
+                    <h6>Realismo</h6>
+                    <p>
+                      Perspectiva segundo a qual os objetos têm uma existência independente dos sujeitos que os percecionam.
+                    </p>
+                  </article>
+                </section>
+
+                <p>
+                  Regra geral, no quotidiano, partimos de uma perspectiva <strong>realista</strong>.
+                </p>
+
+                <p>
+                  Existem dois tipos de realismos: o <strong>realismo direto</strong> ou <strong>ingénuo</strong> (realismo de senso comum), que defende que o mundo exterior existe e esse mundo é como o percecionamos. Os nossos sentidos são confiáveis e dão-nos uma imagem fidedigna desse mundo, e o <strong>realismo indireto</strong> ou <strong>crítico</strong>, que defende que os objetos existem independentemente das nossas mentes, mas não exatamente como os percecionamos.
+                </p>
+
+                <p>
+                  É no realismo indireto que nos vamos focar, precisamente pela possibilidade de <strong>ilusão</strong> ou até <strong>alucinação</strong>.
+                </p>
+
+                <figure>
+                  <img src="imagens/refracao_agua.png" alt="Refração da água.">
+                  <figcaption>
+                    Refração da água.
+                  </figcaption>
+                </figure>
+
+                <p>
+                  Vejamos a imagem acima. Esta colher intacta aparenta estar partida graças ao fenómeno físico da refração da luz. Isto é um dos muitos casos que aponta a <strong>falibilidade dos nossos sentidos</strong>. Se os sentidos nos enganam algumas vezes, então nunca podemos ter a certeza de não estarmos a ser iludidos por eles.
+                </p>
+              </section>
+
+              <section id="sonho">
+                <h4><u>O argumento do sonho</u></h4>
+
+                <p>
+                  Quem nunca teve um sonho que aparentava ser real até acordar? O <strong>argumento do sonho</strong> consiste precisamente nisto. Como poderemos saber que a nossa aparente realidade não é um mero sonho? Os céticos afirmam que é impossível saber.
+                </p>
+              </section>
+
+              <section id="cerebro-cuba">
+                <h4><u>O argumento do cérebro numa cuba</u></h4>
+
+                <p>
+                  O cérebro numa cuba é uma experiência mental em que:
+                </p>
+                <ul>
+                  <li>Um cientista retira o cérebro de uma pessoa do seu corpo.</li>
+                  <li>Coloca-o numa cuba com uma solução que o mantém vivo.</li>
+                  <li>Liga-o a um computador que envia impulsos elétricos ao cérebro.</li>
+                  <li>O computador simula todas as experiências sensoriais: a pessoa vê árvores, sente calor, ouve música e conversa com outras pessoas.</li>
+                </ul>
+
+                <p>
+                  O cérebro recebe exatamente os mesmos estímulos que receberia se estivesse num corpo real, vivendo no mundo real.
+                </p>
+
+                <p>
+                  Assim, tal como no argumento do sonho, a pessoa acredita que está a viver normalmente. No entanto, o cientista pode simular coisas que podem ou não existir e controlar-te.
+                </p>
+
+                <p>
+                  Haverá motivo para negar esta possibilidade? Muitos filósofos afirmam que <strong>não</strong>.
+                </p>
+              </section>
+
+            </section>
+
+            <section id="criticas-ceticismo">
+              <h3>6.1.3) Objeções ao ceticismo</h3>
+
+              <p>
+                O <strong>ceticismo radical</strong> é <strong>autorrefutante</strong>. Se afirmamos que não podemos conhecer nada e essa crença for verdadeira e apoiada pelos argumentos céticos, estamos a formar uma crença verdadeira justificada, ou seja, <strong>conhecimento</strong>.
+              </p>
+
+              <p>
+                A seguir, veremos as criticas e tentativas de René Descartes e David Hume de superar o ceticismo.
+              </p>
+            </section>
+          
+          </section>
+
+          <section id="descartes">
+            <h2>6.3) René Descartes, a resposta racionalista</h2>
+            <section id="introducao-descartes">
+              <h3>6.3.1) A teoria racionalista</h3>
+
+              <section class="biografia">
+                <h4>René Descartes</h4>
+                <img class="biografia-desenho" src="imagens/placeholder.png" alt="Desenho René Descartes">
                 <p>
                   René Descartes (1596-1650) foi um filósofo, matemático e físico francês, considerado um dos fundadores da filosofia moderna. Nasceu a 31 de março de 1596, em La Haye, França. É conhecido pela famosa frase "Penso, logo existo", que representa a ideia de que o pensamento é a primeira certeza que o ser humano pode alcançar, e pelo referencial cartesiano utilizado na matemática até aos dias de hoje. Desenvolveu o método da dúvida metódica, segundo o qual devemos questionar todas as ideias até encontrar verdades que não possam ser postas em causa. Na matemática, contribuiu para o desenvolvimento da geometria analítica, relacionando a álgebra com a geometria. Entre as suas obras mais importantes destacam-se O Discurso do Método (1637) e Meditações sobre a Filosofia Primeira (1641). Morreu a 11 de fevereiro de 1650, na Suécia, deixando um importante legado para a filosofia e para a ciência.
                 </p>
-                <!-- desenho descartes -->
               </section>
 
               <section>
-                <h4>Conceitos importantes:</h4>
+                <h5>Conceitos importantes:</h5>
                 <article class="conceitos">
-                  <h5>Racionalismo</h5>
+                  <h6>Racionalismo</h6>
                   <p>
                     Teorias epistemológicas que identificam como fonte do conhecimento o pensamento ou razão.
                   </p>
                 </article>
 
                 <article class="conceitos">
-                  <h5>Crenças fundacionais</h5>
+                  <h6>Crenças fundacionais</h6>
                   <p>
                     Crenças básicas que não são suportadas por quaisquer outras crenças e que são infalíveis (não podem estar erradas) e indubitáveis (não podem ser postas em dúvida).
                   </p>
                 </article>
 
                 <article class="conceitos">
-                  <h5>Fundacionalismo</h5>
+                  <h6>Fundacionalismo</h6>
                   <p>
                     Perspectiva epistemológica acerca do modo como se estrutura a justificação do conhecimento.
                   </p>
                 </article>
 
                 <article class="conceitos">
-                  <h5>Infalibilismo</h5>
+                  <h6>Infalibilismo</h6>
                   <p>
                     Perspectiva epistemológica que sustenta que o verdadeiro conhecimento exige uma certeza absoluta, incapaz de qualquer erro ou dúvida.
                   </p>
@@ -83,12 +425,26 @@
             </section>
 
             <section id="tipos-conhecimento">
-              <h3>6.2.2) Conhecimento a priori e a posteriori</h3>
+              <h3>6.3.2) Conhecimento <em>a priori</em> e <em>a posteriori</em></h3>
 
               <section>
-                <h4>Conceitos importantes:</h4>
+                <h5>Conceitos importantes:</h5>
                 <article class="conceitos">
-                  <h5>Conhecimento a priori</h5>
+                  <h6>Necessário</h6>
+                  <p>
+                    É aquilo que não pode ser de outro modo; aquilo cuja inexistência ou negação implicaria uma contradição.
+                  </p>
+                </article>
+
+                <article class="conceitos">
+                  <h6>Contingente</h6>
+                  <p>
+                    É aquilo que é, mas poderia ser diferente ou poderia não existir; depende de condições, de causas ou do acaso.
+                  </p>
+                </article>
+
+                <article class="conceitos">
+                  <h6>Conhecimento <em>a priori</em></h6>
                   <p>
                     Conhecimento anterior à experiência, baseado somente na razão.
                   </p>
@@ -98,7 +454,7 @@
                 </article>
 
                 <article class="conceitos">
-                  <h5>Conhecimento a priori</h5>
+                  <h6>Conhecimento <em>a posteriori</em></h6>
                   <p>
                     Conhecimento posterior à experiência, baseado na experiência sensivel.
                   </p>
@@ -109,26 +465,26 @@
               </section>
 
               <p>
-                O conhecimento a priori, sendo independente da experiência sensível e absolutamente certo (<strong>necessário</strong>). Já o conhecimento a posteriori diz respeito às coisas que apenas podemos saber em função da experiência sensível, não sendo absolutamente certo (<strong>contingente</strong>).
+                O conhecimento <em>a priori</em>, sendo independente da experiência sensível e absolutamente certo (<strong>necessário</strong>). Já o conhecimento <em>a posteriori</em> diz respeito às coisas que apenas podemos saber em função da experiência sensível, não sendo absolutamente certo (<strong>contingente</strong>).
               </p>
             </section>
 
             <section id="cogito">
-              <h3>6.2.3) O cogito</h3>
+              <h3>6.3.3) O cogito</h3>
 
               <section>
-                <h4>Conceitos importantes:</h4>
+                <h5>Conceitos importantes:</h5>
                 <article class="conceitos">
-                  <h5>Metódico</h5>
+                  <h6>Metódico</h6>
                   <p>
                     Adjetivo que qualifica tudo aquilo que segue um método, uma ordem lógica, uma regra ou um plano predefinido.
                   </p>
                 </article>
 
                 <article class="conceitos">
-                  <h5>Dúvida metódica</h5>
+                  <h6>Dúvida metódica</h6>
                   <p>
-                    Dúvida voluntária, provisória, universal, hiperbólica e sistemática. A rejeição de qualquer crença que possa ter o mínimo de dúvida associada (como por exemplo, conhecimento a posteriori) e descobrir princípios indubitáveis a partir dos quais possa derivar outras crenças.
+                    Dúvida voluntária, provisória, universal, hiperbólica e sistemática. A rejeição de qualquer crença que possa ter o mínimo de dúvida associada (como por exemplo, conhecimento <em>a posteriori</em>) e descobrir princípios indubitáveis a partir dos quais possa derivar outras crenças.
                   </p>
                 </article>
               </section>
@@ -175,7 +531,7 @@
               <section>
                 <h4><u>Terceiro nível da dúvida - A possibilidade de um génio maligno</u></h4>
                 <p>
-                  Consideremos, então, a hipótese de estarmos, de facto, a sonhar. Ainda que assim fosse, continuaria a ser inquestionável, parece, que um triângulo tem sempre três lados, que dois mais dois são quatro em qualquer circunstância, que Descartes tem um corpo e que o mundo das coisas materiais fora da sua mente existe. Poderá a dúvida estender-se também a estas outras crenças semelhantes? Descartes introduz a absurda, mas possível, possibilidade da existência de um génio maligno cujo único objetivo é trocar-nos a razão. Um tal ser poderia fazer-nos acreditar em falsidades. Esta hipótese lança agora a desconfiança sobre as crenças que frequentemente tomamos como certas, tal como as verdades matemáticas. Novamente, havendo dúvida, devemos <strong>rejeitar</strong> o conhecimento a priori.
+                  Consideremos, então, a hipótese de estarmos, de facto, a sonhar. Ainda que assim fosse, continuaria a ser inquestionável, parece, que um triângulo tem sempre três lados, que dois mais dois são quatro em qualquer circunstância, que Descartes tem um corpo e que o mundo das coisas materiais fora da sua mente existe. Poderá a dúvida estender-se também a estas outras crenças semelhantes? Descartes introduz a absurda, mas possível, possibilidade da existência de um génio maligno cujo único objetivo é trocar-nos a razão. Um tal ser poderia fazer-nos acreditar em falsidades. Esta hipótese lança agora a desconfiança sobre as crenças que frequentemente tomamos como certas, tal como as verdades matemáticas. Novamente, havendo dúvida, devemos <strong>rejeitar</strong> o conhecimento <em>a priori</em>.
                 </p>
               </section>
 
@@ -183,10 +539,10 @@
                 <h4><u>A descoberta do cogito</u></h4>
 
                 <section>
-                  <h4>Conceitos importantes:</h4>
+                  <h5>Conceitos importantes:</h5>
 
                   <article class="conceitos">
-                    <h5>Cogito</h5>
+                    <h6>Cogito</h6>
                     <p>
                       Substância pensante descoberta por intuição racional a partir do exercício da dúvida. Primeira verdade indubitável do sistema cartesiano, a partir da qual é reconstruído, desde as fundações, por dedução, o edifício de conhecimento.
                     </p>
@@ -194,7 +550,7 @@
                 </section>
 
                 <p>
-                  Mas… rejeitando ambos o conhecimento a priori e o conhecimento a posteriori, o que resta? Tendo razões para suspeitar de tudo, será que o ceticismo dominou Descartes? No fim do túnel, Descartes viu uma pequena luz, trazido-lhe pela intuição pura - a primeira certeza invulnerável à dúvida: <strong>a existência do sujeito que duvida</strong>. A dúvida atua sobre todos os objetos do conhecimento, mas não pode atuar sobre a existência daquele que assim duvida. Duvidar é pensar e para pensar é preciso existir. Mesmo que sejamos um cérebro numa cuba, é necessário o cérebro para pensar. Pensar é, pois, condição suficiente para existir: <strong>penso, logo existo</strong> (cogito ergo sum). Seria racionalmente contraditório pensar e não existir. A existência do eu que pensa (ou cogito) é assim uma certeza inabalável que resiste, inclusivamente, à dúvida hiperbólica, à extravagante ficção de um génio maligno que deliberadamente o enganasse.
+                  Mas… rejeitando ambos o conhecimento <em>a priori</em> e o conhecimento <em>a posteriori</em>, o que resta? Tendo razões para suspeitar de tudo, será que o ceticismo dominou Descartes? No fim do túnel, Descartes viu uma pequena luz, trazido-lhe pela intuição pura - a primeira certeza invulnerável à dúvida: <strong>a existência do sujeito que duvida</strong>. A dúvida atua sobre todos os objetos do conhecimento, mas não pode atuar sobre a existência daquele que assim duvida. Duvidar é pensar e para pensar é preciso existir. Mesmo que sejamos um cérebro numa cuba, é necessário o cérebro para pensar. Pensar é, pois, condição suficiente para existir: <strong>penso, logo existo</strong> (cogito ergo sum). Seria racionalmente contraditório pensar e não existir. A existência do eu que pensa (ou cogito) é assim uma certeza inabalável que resiste, inclusivamente, à dúvida hiperbólica, à extravagante ficção de um génio maligno que deliberadamente o enganasse.
                 </p>
 
                 <div class="resumo">
@@ -205,7 +561,7 @@
                     </p>
                   </div>
 
-                  <div class="seta">↓</div>
+                  <div class="seta">➜</div>
 
                   <div class="caixa">
                     <p>
@@ -213,7 +569,7 @@
                     </p>
                   </div>
 
-                  <div class="seta">↓</div>
+                  <div class="seta">➜</div>
 
                   <div class="caixa">
                     <p>
@@ -221,7 +577,7 @@
                     </p>
                   </div>
 
-                  <div class="seta">↓</div>
+                  <div class="seta">➜</div>
 
                   <div class="caixa">
                     <p>
@@ -229,7 +585,7 @@
                     </p>
                   </div>
 
-                  <div class="seta">↓</div>
+                  <div class="seta">➜</div>
 
                   <div class="caixa-final">
                     <p>
@@ -244,8 +600,8 @@
                 
                 <section>
                   <h4>Conceitos importantes</h4>
-                  <article>
-                    <h5>Clareza e distinção</h5>
+                  <article class="conceitos">
+                    <h6>Clareza e distinção</h6>
                     <p>
                       Critério de verdade, de certeza racional na epistemologia cartesiana. Qualidades das quais não se pode duvidar, por muito que se tente e queira. Evidência.
                     </p>
@@ -259,34 +615,34 @@
             </section>
 
             <section id="existencia-deus">
-              <h3>6.2.4) A existência de Deus</h3>
+              <h3>6.3.4) A existência de Deus</h3>
               <section id="dualismo-cartesiano">
                 <h4><u>Dualismo cartesiano</u></h4>
                 <section>
-                  <h4>Conceitos importantes:</h4>
+                  <h5>Conceitos importantes:</h5>
                   <article class="conceitos">
-                    <h5>Dualismo cartesiano</h5>
+                    <h6>Dualismo cartesiano</h6>
                     <p>
                       Teoria segundo a qual o ser humano é constituído por duas substâncias distintas e independentes: a mente (res cogitans) e o corpo (res extensa).
                     </p>
                   </article>
 
                   <article class="conceitos">
-                    <h5>Essência</h5>
+                    <h6>Essência</h6>
                     <p>
                       Conjunto de propriedades fundamentais, permanentes e imutáveis que definem o que uma entidade ou substância é, e sem as quais ela deixa de ser o que é.
                     </p>
                   </article>
 
                   <article class="conceitos">
-                    <h5><em>Res cogitans</em></h5>
+                    <h6><em>Res cogitans</em></h6>
                     <p>
                       Coisa pensante, substância mental cuja essência é pensar.
                     </p>
                   </article>
 
                   <article class="conceitos">
-                    <h5><em>Res extensa</em></h5>
+                    <h6><em>Res extensa</em></h6>
                     <p>
                       Coisa extensa, substância material cuja essência é ocupar espaço. Caracteriza-se por ser divisível, possuir dimensões (comprimento, largura e profundidade) e estar sujeita às leis da física.
                     </p>
@@ -306,9 +662,9 @@
               <section id="tipos-ideias">
                 <h4><u>Três tipos de ideias</u></h4>
                   <section>
-                    <h4>Conceitos importantes:</h4>
+                    <h5>Conceitos importantes:</h5>
                     <article class="conceitos">
-                      <h5>Solipsismo</h5>
+                      <h6>Solipsismo</h6>
                       <p>
                         Perspectiva epistemológica segundo a qual nada pode ser conhecido, à exceção do próprio eu e dos conteúdos da sua consciência.
                       </p>
@@ -318,7 +674,7 @@
                   Ao examinar a sua mente, Descartes encontra três tipos distintos de ideias:
                 </p>
                 <ul>
-                  <li>As <strong>ideias inatas</strong>, que parecem fazer parte desde sempre da sua própria natureza, como as ideias de pensamento ou de verdade;</li>
+                  <li>As <strong>ideias inatas</strong>, que parecem fazer parte desde sempre da sua própria natureza (à nascença), como as ideias de pensamento ou de verdade;</li>
                   <li>As <strong>ideias adventícias</strong>, que aparentam proceder de objetos situados fora da sua mente e ter sido adquiridas através dos sentidos, como as ideias de sol ou de calor;</li>
                   <li>As <strong>ideias factícias</strong>, que encara como invenções forjadas pela imaginação, como as ideias de sereia e de hipogrifo.</li>
                 </ul>
@@ -333,9 +689,9 @@
               <section id="provas-existencia-deus">
                 <h4><u>Provas da existência de Deus</u></h4>
                 <section>
-                  <h4>Conceitos importantes:</h4>
+                  <h5>Conceitos importantes:</h5>
                   <article class="conceitos">
-                    <h5>Deus</h5>
+                    <h6>Deus</h6>
                     <p>
                       Ser omnipotente (todo poderoso), omnisciente (todo sabido), omnipresente (presente em todo o lado) e omnibenevolente (todo bondoso).
                     </p>
@@ -362,9 +718,11 @@
                   Assim, Deus existe como uma ideia inata da ação do artista (Deus) na sua obra (nós).
                 </p>
 
-                <p>
-                  Facto curioso:<br>Este argumento soma-se a outro argumento a favor da existência de Deus, o <a href="religiao.html"><strong>argumento ontológico</strong></a>
-                </p>
+                <aside>
+                  <p>
+                    Facto curioso: este argumento soma-se a outro argumento a favor da existência de Deus, o <a href="religiao.html"><strong>argumento ontológico</strong></a>.
+                  </p>
+                </aside>
 
                 <h4><u>Deus como garante epistemológico</u></h4>
                 <p>
@@ -381,11 +739,10 @@
                   Na ordem da investigação, Deus é a segunda crença descoberta por Descartes e a mais importante, pois garante quaisquer outras.
                 </p>
 
-                <p>MB, achas importante fazer um esquema a resumir tudo ou fica muito confuso?</p>
               </section>
             </section>
             <section id="criticas-descartes">
-              <h3>6.2.5) Objeções ao racionalismo cartesiano</h3>
+              <h3>6.3.5) Objeções ao racionalismo cartesiano</h3>
               <h4><u>A dúvida cartesiana é impraticável e incurável</u></h4>
               <p>
                 David Hume, filósofo do século XVIII que vamos estudar a seguir, afirma que a dúvida cartesiana é <strong>impraticável</strong> pela própria natureza humana. Nós não conseguimos duvidar de absolutamente tudo. Pensem no ceticismo radical: embora se tenha em mente que nenhum conhecimento é possível, ainda se tem em mente conhecimento prático.
@@ -398,6 +755,517 @@
             </section>
           </section>
 
+          <section id="hume">
+            <h2>6.4) David Hume, a resposta empirista</h2>
+
+            <section id="introducao-hume">
+              <h3>6.4.1) A teoria empirista</h3>
+
+              <section class="biografia">
+                <h4>David Hume</h4>
+                <img class="biografia-desenho" src="imagens/desenho_hume.png" alt="Desenho David Hume">
+                <p>
+                  David Hume (1711-1776) foi um filósofo, historiador e economista escocês, considerado uma das figuras mais importantes do Iluminismo e da filosofia moderna. Nasceu a 7 de maio de 1711, em Edimburgo, na Escócia. Ficou conhecido pelas suas ideias sobre o conhecimento humano, defendendo que este tem origem na experiência e na observação, e não apenas na razão. Esta corrente filosófica ficou conhecida como empirismo. Hume também questionou a existência de ideias inatas e analisou temas como a causalidade, a religião e a natureza humana. Entre as suas obras mais importantes destacam-se Tratado da Natureza Humana (1739-1740) e Investigação sobre o Entendimento Humano (1748). Morreu a 25 de agosto de 1776, em Edimburgo, deixando uma influência significativa na filosofia, especialmente no desenvolvimento do empirismo e do pensamento crítico.
+                </p>
+              </section>
+
+              <section>
+                <h5>Conceitos importantes:</h5>
+                <article class="conceitos">
+                  <h6>Empirismo</h6>
+                  <p>
+                    Teorias epistemológicas que identificam como fonte do conhecimento a experiência sensível (visão, tato, olfato, …)
+                  </p>
+                </article>
+              </section>
+
+              <p>Em oposição ao racionalismo, encontra-se o empirismo. A seguinte tabela apresenta uma comparação entre ambos:</p>
+
+              <table border="1">
+                <caption>Racionalismo VS Empirismo</caption>
+                <thead>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>Racionalismo</th>
+                    <th>Empirismo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tabela-categoria">Origem do conhecimento</td>
+                    <td>Razão</td>
+                    <td>Experiência sensível</td>
+                  </tr>
+                  <tr>
+                    <td class="tabela-categoria">Principal fonte do conhecimento</td>
+                    <td>Lógica e dedução</td>
+                    <td>Observação e experimentação</td>
+                  </tr>
+                  <tr>
+                    <td class="tabela-categoria">Sentidos</td>
+                    <td>Podem enganar, não são fiáveis</td>
+                    <td>Essênciais para obter conhecimento</td>
+                  </tr>
+                  <tr>
+                    <td class="tabela-categoria">Há conhecimento à nascença?</td>
+                    <td>Sim, como a ideia de perfeição</td>
+                    <td>Não, somos como uma tábua rasa</td>
+                  </tr>
+                  <tr>
+                    <td class="tabela-categoria">Principais filósofos</td>
+                    <td>Descartes, Espinosa e Leibniz</td>
+                    <td>Hume, Locke e Bacon</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p>
+                À semelhança do racionalismo, o empirismo também defende o <strong>funcionalismo</strong> e o <strong>infalibilismo</strong>, ou seja, o conhecimento deve repousar sob crenças básicas infalíveis e indubitáveis.
+              </p>
+
+              <p>
+                Hume tem um projeto simples, mas ambicioso: aplicando métodos que recolhe das ciências da natureza, construir uma ciência da natureza humana - fazer a geografia ou anatomia da estrutura interna da nossa mente.
+              </p>
+            </section>
+
+            <section id="impressoes-ideias">
+              <h3>6.4.2) Impressões e ideias</h3>
+              <section>
+                <h5>Conceitos importantes:</h5>
+                <article class="conceitos">
+                  <h6>Percepções</h6>
+                  <p>
+                    Todos os conteúdos e estados da mente humana — ou seja, tudo o que está presente no nosso espírito quando pensamos, sentimos, lembramos ou experimentamos o mundo.
+                  </p>
+                </article>
+
+                <article class="conceitos">
+                  <h6>Impressões</h6>
+                  <p>
+                    Objetos da nossa experiência num determinado instante. Percepções mais vívidas e intensas.
+                    <br>&emsp;<em>Exemplo:</em> Sinto a dor intensa de entalar um dedo.
+                  </p>
+                </article>
+
+                <article class="conceitos">
+                  <h6>Ideias</h6>
+                  <p>
+                    Recordações de impressões. Percepções menos vívidas e intensas.
+                    <br>&emsp;<em>Exemplo:</em> Penso na dor que senti ao entalar um dedo.
+                  </p>
+                </article>
+              </section>
+
+              <p>
+                O escrutínio de Hume começa pela consciência e pelos seus conteúdos. Conclui que tudo o que nela encontramos são <strong>perceções</strong>. Estas organizam-se em duas classes ou categorias que se distinguem entre si pelos seus <strong>graus de força e vivicidade</strong>: as <strong>impressões</strong> e as <strong>ideias</strong>.
+              </p>
+
+              <p>
+                As impressões incluem tanto <strong>sensações externas</strong> (como ver, ouvir), como sentimentos internos (emoções, desejos).
+              </p>
+              
+              <p>
+                Já as ideias são recordações ou imaginações provenientes das impressões.
+              </p>
+
+              <figure>
+                <img src="imagens/escola_de_atenas.jpg" alt="Quadro escola de atenas.">
+                <figcaption>
+                  Escola de Atenas, da autoria de Rafael Sanzio.
+                </figcaption>
+              </figure>
+
+              <p>
+                Ao olhar para este quadro, podemos sentir um certo fascínio (<strong>sentimento interno</strong>) pelo domínio do claro-escuro e das cores presentes no quadro (<strong>sensação externa</strong>), falamos de <strong>impressões</strong>.
+              </p>
+
+              <p>
+                Se, mais tarde, nos recordarmos que, por exemplo, Aristóteles segura a <em>Ética a Nicómaco</em> e estende a palma da mão para a terra, simbolizando a filosofia natural, a experiência empírica e a observação do mundo real, falamos de <strong>ideias</strong>.
+              </p>
+
+              <p>
+                Há <strong>impressões simples</strong> e <strong>complexas</strong>, tal como há <strong>ideias simples</strong> e <strong>complexas</strong>. As impressões e ideias simples não permitem nenhum tipo de separação, tal como a ideia de verde. Pelo contrário, as impressões ou ideias complexas podem ser decompostas em partes. Hume dá o exemplo da maçã. Numa maçã encontramos reunidas diversas qualidades que não se confundem umas com as outras, como o cheiro ou o sabor característico.
+              </p>
+
+              <h4><u>O princípio da cópia</u></h4>
+              <section>
+                <h5>Conceitos importantes:</h5>
+                <article class="conceitos">
+                  <h6>Princípio da Cópia</h6>
+                  <p>
+                    Todos as ideias derivam direta ou indiretamente das impressões.
+                  </p>
+                </article>
+              </section>
+
+              <p>
+                Todo o conhecimento tem como ponto de partida as <strong>impressões</strong>. Não há ideias inatas. As ideias simples são sempre <strong>cópias</strong> de impressões simples. Já as ideias complexas podem ser construídas a partir de diversas impressões simples ou complexas, ou através da imaginação, como a sereia ou o hipogrifo.
+              </p>
+
+              <p>
+                A tabela seguinte resume e faz uma comparação dos novos conceitos:
+              </p>
+
+              <table border="1">
+                <caption>Percepções</caption>
+                <thead>
+                  <tr>
+                    <th>Impressões</th>
+                    <th>Ideias</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>São os objetos da experiência presente</td>
+                    <td>São reprsentações ou imagens das impessões</td>
+                  </tr>
+                  <tr>
+                    <td>Dizem respeito ao senti.</td>
+                    <td>Dizem respeito ao pensar</td>
+                  </tr>
+                  <tr>
+                    <td>São mais vívidas e intensas</td>
+                    <td>São menos vívidas e intensas</td>
+                  </tr>
+                  <tr>
+                    <td>Precedem sempre as ideias</td>
+                    <td>São cópias das impressões</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p>
+                Mas como se pode defender a inexistência de ideias inatas? Hume apresenta o <strong>argumento do cego e do surdo</strong>:
+              </p>
+
+              <ul class="argumento">
+                <li>Existem pessoas, como os cegos e os surdos, com incapacidades que os privam, desde nascença, de um certo tipo se sensações externas.</li>
+                <li>Se as ideias não derivassem das impressões, seria possível formar imagens ou representações na sua ausência.</li>
+                <li>Porém, a verdade é que as pessoas com uma incapacidade que as priva, desde nascença, de um certo tipo de sensações externas não podem ter as imagens ou representações correspondentes.</li>
+                <li>Todas as ideias são cópias de impressões.</li>
+              </ul>
+
+              <p>
+                Para sustentar o princípio da cópia, Hume apresenta ainda um segundo argumento:
+              </p>
+
+              <ul class="argumento">
+                <li>Todas as ideias derivam da experiência (impressões).</li>
+                <li>Não temos qualquer impressão sensível que corresponde diretamente à ideia de Deus.</li>
+                <li>A ideia de Deus tem de ser proveniente da imaginação.</li>
+              </ul>
+
+              <p>
+                Podemos interpretar Deus como aquilo que o ser humano valoriza (bondade, justiça, sabedoria, ...) elevado ao expoente máximo.
+              </p>
+            </section>
+
+            <section id="dicotomia">
+              <h3>6.4.3) Relações de ideias e questões de facto</h3>
+              <section>
+                <h5>Conceitos importantes:</h5>
+                <article class="conceitos">
+                  <h6>Dicotomia</h6>
+                  <p>
+                    Divisão de um conceito, elemento ou conjunto em duas partes distintas, opostas ou mutuamente exclusivas.
+                    <br>&emsp;<em>Exemplos:</em> bem e mal, claro e escuro, razão e emoção, corpo e mente.
+                  </p>
+                </article>
+
+                <article class="conceitos">
+                  <h6>Conhecimento substancial</h6>
+                  <p>
+                    Conhecimento que nos informa como o mundo é.
+                  </p>
+                </article>
+
+                <article class="conceitos">
+                  <h6>Relação de ideias</h6>
+                  Verdades necessárias justificadas <em>a priori</em>, independentemente da experiência. São absolutamente certas, mas não fornecem conhecimento substancial.
+                  <br>&emsp;<em>Exemplo:</em> Dois mais cinco é equivalente a dez menos três.
+                </article>
+
+                <article class="conceitos">
+                  <h6>Questão de facto</h6>
+                  <p>
+                    Verdades contingentes que só podem ser descobertas <em>a posteriori</em> por intermédio da experiência. Só elas fornecem conhecimento substancial.
+                    <br>&emsp;<em>Exemplo:</em> O ferro dilata com o calor.
+                  </p>
+                </article>
+              </section>
+
+              <p>
+                Apesar de todo o nosso conhecimento ter como ponto de partida a experiência sensível, algumas verdades, como as da matemática e da geometria, podem ser conhecidas ou justificadas <em>a priori</em>. Esta afirmação conduz a uma dicotomia importante das proposições: as <strong>relações de ideias</strong> e as <strong>questões de facto</strong>.
+              </p>
+
+              <p>Abaixo está uma tabela a comparar ambos, para facilitar a vossa compreensão:</p>
+
+              <table border="1">
+                <caption>Proposições</caption>
+                <thead>
+                  <tr>
+                    <th>Relações de ideias</th>
+                    <th>Questões de facto</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Podemos conhecer através do pensamento. São justificadas <em>a priori</em></td>
+                    <td>Podemos conhecer através da experiência sensível. São justificadas <em>a posteriori</em></td>
+                  </tr>
+                  <tr>
+                    <td>Verdades logicamente necessárias</td>
+                    <td>Verdades logicamente contingentes</td>
+                  </tr>
+                  <tr>
+                    <td>São demonstrativamente certas</td>
+                    <td>Não são demonstrativamente certas</td>
+                  </tr>
+                  <tr>
+                    <td>Característica de áreas do conhecimento, como a matemática</td>
+                    <td>Característica das ciências naturais, como a física</td>
+                  </tr>
+                  <tr>
+                    <td>Não fornecem conhecimento substancial</td>
+                    <td>Fornecem conhecimento substancial</td>
+                  </tr>
+                </tbody>
+              </table>              
+
+            </section>
+            
+            <section id="justificacao-questoes-facto">
+              <h3>6.4.4) A justificação das questões de facto</h3>
+              <p>
+                Imagina que pões cubos de gelo em um ambiente quente. Com o passar do tempo, vês que derreteram. Podemos concluir que o calor fez o gelo derreter, certo? Bem... David Hume discordaria connosco.
+              </p>
+              <section id="problema-causalidade">
+                <h4><u>O problema da causalidade</u></h4>
+
+                <section>
+                  <h5>Conceitos importantes:</h5>
+                  <article class="conceitos">
+                      <h6>Relação causa-efeito</h6>
+                      <p>
+                        Conexão lógica em que um evento inicial (a causa) provoca diretamente a ocorrência de um segundo evento (o efeito ou consequência).
+                      </p>
+                  </article>
+
+                  <article class="conceitos">
+                    <h6>Conexão necessária</h6>
+                    <p>
+                      Ligação invariável e verdadeira para todos os mundos - em que as causas são suficientes para causar os efeitos.
+                    </p>
+                  </article>
+                </section>
+
+                <p>
+                  O problema de afirmar que a questão de facto "O gelo derreteu devido ao calor" vai além dos sentidos, tal como "Todo o gelo derrete com o calor".
+                </p>
+
+                <p>
+                  A maior parte das nossas questões de facto parece depender da <strong>relação causa-efeito</strong>.
+                </p>
+
+                <p>
+                  Quando pensamos que dois acontecimentos estão ligados, supomos que haja uma <strong>conexão necessária</strong> entre a causa e o efeito. Acreditamos que quando uma bola de bilhar toca em outra bola de bilhar, há forçosamente um movimento em todas as circunstâncias possíveis. Acontece agora, como aconteceu no passado e terá de acontecer no futuro.
+                </p>
+
+                <p>
+                  O conhecimento das causas e dos efeitos só pode ser alcançado através da experiência porque a razão, por si só, não consegue descobrir que os acontecimentos estão ligados causalmente. Se observares uma bola em movimento, não consegues descobrir apenas através do pensamento que, ao embater noutra bola, esta começará a mover-se.
+                </p>
+
+                <p>
+                  A ideia de conexão necessária não consegue ser conhecida <em>a priori</em>. Poderá então ser justificada <em>a posteriori</em>? Hume defende que <strong>não</strong>.
+                </p>
+
+                <p>
+                  Se afirmarmos ter a ideia de conexão necessária e se todas as ideias derivam de impressões, então teremos de encontrar uma impressão que corresponda a esta ideia.
+                </p>
+
+                <p>
+                  Só observarmos a sucessão de dois acontecimentos, a conexão necessária não pode ser fundamentada. A combinação sequencial, ainda que recorrente, de dois acontecimentos pode ser fruto do acaso.
+                </p>
+
+                <p>
+                  Como a conexão necessária não pode ser justificada <em>a priori</em>, nem <em>a posteriori</em>, chegamos à <strong>primeira conclusão cética</strong>:
+                </p>
+                <ul>
+                  <li>A ideia de causalidade como conexão necessária não está justificada.</li>
+                </ul>
+              </section>
+              
+              <section id="habito-costume">
+                <h4><u>Hábito ou costume</u></h4>
+                <section>
+                  <h5>Conceitos importantes:</h5>
+                  <article class="conceitos">
+                    <h6>Hábito ou costume</h6>
+                    <p>
+                      Predeposição psicológica para passar de A para B, conforme a sua repetição constante.
+                    </p>
+                  </article>
+
+                  <article class="conceitos">
+                    <h6>Naturalismo</h6>
+                    <p>
+                      Abordagem que explica o entendimento, as paixões e a moral humana a partir da observação e da experiência, tratando a mente como parte do mundo natural.
+                    </p>
+                  </article>
+                </section>
+
+                <p>
+                  Então, como podemos explicar a nossa crença na existência de uma conexão necessária? Hume defende que é uma mera associação fabricada pelo <strong>hábito</strong> ou <strong>costume</strong>. Não existe nos objetos, mas sim em nós.
+                </p>
+
+                <p>
+                  Depois da observação de sucessivos eventos semelhantes, o hábito ou costume, pelo intermédio da imaginação, gera em nós a expectativa de que um se siga do outro, que o futuro repita o passado. Esta <strong>expectativa</strong> é a <strong>impressão</strong> da qual deriva a <strong>ideia de conexão necessária</strong>. Trata-se de uma <strong>tendência</strong>, de um <strong>princípio psicológico</strong> que nos guia e que é fruto da evolução (naturalismo).
+                </p>
+              </section>
+
+              <section id="problema-inducao">
+                <h4><u>O problema da indução</u></h4>
+                <section>
+                  <h5>Conceitos importantes:</h5>
+                  <article class="conceitos">
+                    <h6>Princípio da Uniformidade da Natureza</h6>
+                    <p>
+                      Princípio que defende que a natureza é regular, o futuro repetirá o passado.
+                    </p>
+                  </article>
+                </section>
+
+                <p>
+                  Segundo hume, o conhecimento substancial baseia-se na <strong>indução</strong>, ou seja, usamos experiências passadaspara fazer <strong>generalizações</strong> e <strong>previsões</strong> sobre o futuro. Somente este processo permite-nos tirar conclusões sobre aquilo que ainda não observámos. Mas haverá boas razões para confiar nas nossas inferências indutivas?
+                </p>
+
+                <p>
+                  Os argumentos indutivos são <strong>inferências ampliativas</strong>, ou seja, está para além do conteúdo das premissas, sendo apoiado pelas mesmas. Vejamos um exemplo:
+                </p>
+
+                <ul class="argumento">
+                  <li>Todos os lobos observados são carnívoros.</li>
+                  <li>Todos os lobos são carnívoros (generalização).</li>
+                </ul>
+
+                <p>
+                  <strong><u>ou</u></strong>
+                </p>
+
+                <ul class="argumento">
+                  <li>Todos os lobos observados são carnívoros.</li>
+                  <li>O próximo lobo que encontrarmos será carnívoro (previsão).</li>
+                </ul>
+
+                <p>
+                  Na base das inferências indutivas estão o <strong>Princípio da Uniformidade da Natureza</strong>. Esta é a <strong>premissa oculta e subentendida</strong> que nos permite dar o salto do conhecido para o desconhecido, ou seja, a indução só está fundamentada caso consigamos comprová-la.
+                </p>
+
+                <ul class="argumento">
+                  <li>Todos os lobos observados são carnívoros.</li>
+                  <li><strong>O futuro repetirá o passado.</strong></li>
+                  <li>Todos os lobos são carnívoros (generalização).</li>
+                </ul>
+
+                <p>
+                  <strong><u>ou</u></strong>
+                </p>
+
+                <ul class="argumento">
+                  <li>Todos os lobos observados são carnívoros.</li>
+                  <li><strong>O futuro repetirá o passado.</strong></li>
+                  <li>O próximo lobo que encontrarmos será carnívoro (previsão).</li>
+                </ul>
+
+                <p>
+                  Hume nega a possibilidade de a comprovar. O Princípio da Uniformidade da Natureza, sendo uma questão de facto, não pode ser justificada <em>a priori</em>. Não existe <strong>nenhuma contradição</strong> em afirmar que o futuro não repetirá o passado.
+                </p>
+
+                <p>
+                  Por ser uma questão de facto, só pode ser justificado empiricamente. No entanto, temos um novo problema: chegámos a uma petição de princípio.
+                </p>
+
+                <div class="esquema">
+                  <div class="circulo">
+                    <p>
+                      A nossa crença na <strong>regularidade da natureza</strong> está fundada na confiança que depositamos na <strong>indução.</strong>
+                    </p>
+                  </div>
+
+                  <div class="setas">
+                    <span>➜</span>
+                    <span class="seta-baixo">➜</span>
+                  </div>
+
+                  <div class="circulo">
+                    <p>
+                      A confiança que depositamos na <strong>indução</strong> está fundada na nossa crença na <strong>regularidade da natureza.</strong>
+                    </p>
+                  </div>
+                </div>
+
+                <p>
+                  Somos forçados a concluir que não temos qualquer justificação racional para aquilo que ainda não observámos.
+                </p>
+
+                <p>Assim, chegámos à <strong>segunda e terceira conclusão cética</strong>:</p>
+                <ul>
+                  <li>O Princípio da Uniformidade da Natureza não está justificado.</li>
+                  <li>As conclusões das nossas inferências indutivas não estão justificadas.</li>
+                </ul>
+              </section>
+
+              <section id="problema-mundo-exterior">
+                <h4><u>O problema da existência do mundo exterior</u></h4>
+                <p>
+                  Sendo que apenas podemos ter acesso aos conteúdos da nossa mente e que a ideia de conexão necesária não está racionalmente justificada, segue-se que não pode haver certezas relativamente à existência do mundo exterior.
+                </p>
+
+                <p>
+                  Decorre a <strong>quarta conclusão cética</strong>:
+                </p>
+
+                <ul>
+                  <li>A existência do mundo exterior não está justificada.</li>
+                </ul>
+              </section>
+
+              <section id="ceticismo-moderado">
+                <h4><u>Cetiismo moderado ou mitigado</u></h4>
+                <p>
+                  Se não podemos justificar ou provar pela razão (<em>a priori</em>) ou por intermédio da observação (<em>a posteriori</em>) porque confiamos na causalidade, na uniformidade da natureza, nas conclusões das inferências indutivas, nem na existência do mundo exterior, caímos num ceticismo radical? Hume afirma que <strong>não</strong>. "A dúvida cética, tanto relativamente à razão como aos sentidos, é uma doença que não pode ser radicalmente curada."
+                </p>
+
+                <p>
+                  De um ponto de vista teórico, para Hume, o ceticismo é imbatível, mas, na prática, a nossa natureza impede-nos de viver com o mesmo. Para continuar a minha vida normal, tenho de confiar que a comida é o que me saciará sempre a fome.
+                </p>
+
+                <p>
+                  Assim, Hume defende o <strong>ceticismo moderado</strong>. Em busca de uma resposta para derrotar o ceticismo, acabou por confirmar o carácter falibilista das nossas mentes. Todo o conhecimento substancial é contingente. Em questões de facto, a certeza é uma impossibilidade.
+                </p>
+              </section>
+              
+            </section>
+
+            <section id="criticas-hume">
+              <h3>6.4.5) Objeções ao empirismo humeano</h3>
+
+              <p>
+                Filósofos como Karl Popper, filósofo que vamos estudar a seguir, consideram que Hume estava certo ao fazer notar que não é possível justificar logicamente a indução. A este propósito, afirma Popper, a sua abordagem do problema é clara e conclusiva. Contudo, Popper declara-se insatisfeito, e mesmo desiludido, com a explicação psicológica da indução, acusando Hume de, com ela, cair no <strong>irracionalismo</strong> e de nos oferecer uma teoria que não é propriamente filosófica.
+              </p>
+
+              <p>
+                Esta posição é problemática porque:
+              </p>
+              <ul>
+                <li>Se a razão não consegue justificar a existência do mundo exterior, então o conhecimento fica sem uma base racional.</li>
+                <li>Se as nossas crenças dependem do hábito, estamos a acreditar nas coisas sem uma justificação racional suficiente.</li>
+                <li>O hábito pode levar-nos a acreditar em coisas verdadeiras, mas também pode levar-nos a cometer erros.</li>
+              </ul>
+            </section>
+
+            <!-- comparação filósofos? -->
+          </section>
         </section>
       </main>
     </div>

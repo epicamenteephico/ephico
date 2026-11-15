@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <details name="sidebar-element">
             <summary>Introdução</summary>
             <div class="panel">
-                <p>Lorem ipsum dolor sit amet...</p>
+                <p>Brevemente...</p>
             </div>
         </details>
         
@@ -42,24 +42,45 @@ document.addEventListener("DOMContentLoaded", function() {
 
         <details name="sidebar-element">
             <summary>Livre-Arbítrio</summary>
-            <div class="panel"><p>Lorem ipsum dolor sit amet...</p></div>
+            <div class="panel"><p>Brevemente...</p></div>
         </details>
 
         <details name="sidebar-element">
             <summary>Ética</summary>
-            <div class="panel"><p>Lorem ipsum dolor sit amet...</p></div>
+            <div class="panel"><p>Brevemente...</p></div>
         </details>
 
         <details name="sidebar-element">
             <summary>Justiça</summary>
-            <div class="panel"><p>Lorem ipsum dolor sit amet...</p></div>
+            <div class="panel"><p>Brevemente...</p></div>
         </details>
 
         <details name="sidebar-element">
             <summary>Epistemologia</summary>
             <div class="panel">
-                <a href="epistemologia.html">teste magano tas a ler isto</a>
+            <a href="epistemologia.html#conteudo">6. Índice</a>
+                <ul>
+                    <li><a href="epistemologia.html#tema-problema">6.1) O problema da definição de conhecimento</a></li>
+                    <li><a href="epistemologia.html#desafio-cetico">6.2) O desafio cético: principais argumentos</a></li>
+                    <li><a href="epistemologia.html#descartes">6.3) René Descartes, a resposta racionalista</a></li>
+                    <li><a href="epistemologia.html#hume">6.4) David Hume, a resposta empirista</a></li>
+                </ul>
             </div>
+        </details>
+
+        <details name="sidebar-element">
+            <summary>Ciência</summary>
+            <div class="panel"><p>Brevemente...</p></div>
+        </details>
+
+        <details name="sidebar-element">
+            <summary>Religião</summary>
+            <div class="panel"><p>Brevemente...</p></div>
+        </details>
+
+        <details name="sidebar-element">
+            <summary>Estética</summary>
+            <div class="panel"><p>Brevemente...</p></div>
         </details>
 
         <details name="sidebar-element">

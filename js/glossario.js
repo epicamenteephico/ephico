@@ -1,7 +1,7 @@
 // const = fazer constante
 // escrever um nome todo em maiúsculas é uma convenção que significa
 // que queremos que o valor seja imutável
-const PAGINAS = ["logica.html"]; 
+const PAGINAS = ["introducao.html", "logica.html", "livrearbitrio.html", "etica.html", "justica.html", "epistemologia.html", "ciencia.html", "religiao.html", "estetica.html"]; 
 
 const lista = document.getElementById("lista-glossario");
 const campo = document.getElementById("pesquisa");
@@ -21,11 +21,11 @@ async function carregarPagina(pagina) {
   const conceitos = [];
 
   doc.querySelectorAll(".conceitos").forEach(function (artigo) {
-    const titulo = artigo.querySelector("h5").textContent.trim();
+    const titulo = artigo.querySelector("h6").textContent.trim();
 
     // Corpo = tudo menos o título
     const corpo = artigo.cloneNode(true);
-    corpo.querySelector("h5").remove();
+    corpo.querySelector("h6").remove();
 
     // Secção mais próxima com id, para o link "Ver em..."
     const secao = artigo.closest("section[id]");
@@ -50,9 +50,9 @@ function criarCartao(c) {
   const artigo = document.createElement("article");
   artigo.className = "conceitos";
 
-  const h5 = document.createElement("h5");
-  h5.textContent = c.titulo;
-  artigo.appendChild(h5);
+  const h6 = document.createElement("h6");
+  h6.textContent = c.titulo;
+  artigo.appendChild(h6);
 
   artigo.insertAdjacentHTML("beforeend", c.html);
 
