@@ -13,7 +13,7 @@
     <div id="conteudo">
       <div id="sidebar-container"></div>
 
-      <button onclick="topFunction()" id="topbutton" title="Go to top">↑</button>
+      <button onclick="topFunction()" id="topbutton" title="Go to top">➜</button>
 
 
       <header>
@@ -536,8 +536,320 @@
                 </ul>
 
                 <p>
-                  A implicação de P é a condição suficiente e necessária de Q, e vice versa, ou seja, se é água, é necessariamente H₂O e se for H₂O, é necessariamente água.
+                  A implicação de P é a condição suficiente e necessária de Q, e vice versa, ou seja, se é água, é necessariamente H₂O e se é H₂O, é necessariamente água.
                 </p>
+              </section>
+
+            </section>
+
+            <section id="tabelas-verdade">
+              <h3>2.2.4) As funções de verdade das conectivas e as tabelas de verdade</h3>
+
+              <p>
+                As conectivas permitem verificar os tipos de relações existentes entre as proposições e determinar em que condições são verdadeiras e falsas.
+              </p>
+
+              <p>
+                Uma das formas de analisar estas relações e a validade dos nossos raciocínios é através de <strong>tabelas de verdade</strong>.
+              </p>
+
+              <section>
+                <h5>Conceitos importantes:</h5>
+                <article class="conceitos">
+                  <h6>Tabela de verdade</h6>
+                  <p>
+                    Sistema que permite verificar através de uma matriz a verdade lógica de uma fórmula proposicional.
+                  </p>
+                </article>
+              </section>
+
+              <section id="negacao-tabela">
+                <h4><u>Negação</u></h4>
+                <div class="tabela-lado">
+                  <table border="1">
+                    <thead>
+                      <tr>
+                        <th>P</th>
+                        <th>¬P</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>V</td>
+                        <td>F</td>
+                      </tr>
+                      <tr>
+                        <td>F</td>
+                        <td>V</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
+
+                  <div class="tabela-texto">
+                    <p>
+                      A negação de P é verdadeira quando P for falso.
+                    </p>
+                    
+                    <p>
+                      <em>Exemplo:</em> Se for verdade que orquídeas são flores, é falso que orquídeas não são flores. Caso contrário, estaríamos a quebrar o princípio da não contradição.
+                    </p>
+
+                  </div>
+                </div>
+              </section>
+
+              <section id="conjuncao-tabela">
+                <h4><u>Conjunção</u></h4>
+                <div class="tabela-lado">
+                  <table border="1">
+                    <thead>
+                      <tr>
+                        <th>P</th>
+                        <th>Q</th>
+                        <th>P ∧ Q</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>V</td>
+                      </tr>
+                      <tr>
+                        <td>V</td>
+                        <td>F</td>
+                        <td>F</td>
+                      </tr>
+                      <tr>
+                        <td>F</td>
+                        <td>V</td>
+                        <td>F</td>
+                      </tr>
+                      <tr>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
+
+                  <div class="tabela-texto">
+                    <p>
+                      A conjunção de P e Q só é verdadeira quando ambas as proposições forem verdadeiras.
+                    </p>
+                    
+                    <p>
+                      <em>Exemplo:</em> Se há orquídeas e lírios na florista, é falso afirmar que só há lírios na florista.
+                    </p>
+
+                  </div>
+                </div>
+              </section>
+
+              <section id="disjuncao-inclusiva-tabela">
+                <h4><u>Disjunção inclusiva</u></h4>
+                <div class="tabela-lado">
+                  <table border="1">
+                    <thead>
+                      <tr>
+                        <th>P</th>
+                        <th>Q</th>
+                        <th>P ∨ Q</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>V</td>
+                      </tr>
+                      <tr>
+                        <td>V</td>
+                        <td>F</td>
+                        <td>V</td>
+                      </tr>
+                      <tr>
+                        <td>F</td>
+                        <td>V</td>
+                        <td>V</td>
+                      </tr>
+                      <tr>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
+
+                  <div class="tabela-texto">
+                    <p>
+                      A disjunção inclusiva de P e Q é verdadeira quando as duas proposições não forem falsas.
+                    </p>
+                    
+                    <p>
+                      <em>Exemplo:</em> Se há orquídeas ou líreos na florista, pode tanto haver ambas as flores, quanto somente uma.
+                    </p>
+
+                  </div>
+                </div>
+              </section>
+
+              <section id="disjuncao-exclusiva-tabela">
+                <h4><u>Disjunção exclusiva</u></h4>
+                <div class="tabela-lado">
+                  <table border="1">
+                    <thead>
+                      <tr>
+                        <th>P</th>
+                        <th>Q</th>
+                        <th>P V̇ Q</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>F</td>
+                      </tr>
+                      <tr>
+                        <td>V</td>
+                        <td>F</td>
+                        <td>V</td>
+                      </tr>
+                      <tr>
+                        <td>F</td>
+                        <td>V</td>
+                        <td>V</td>
+                      </tr>
+                      <tr>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>F</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
+
+                  <div class="tabela-texto">
+                    <p>
+                      A disjunção exclusiva de P e Q é verdadeira quando somente uma das proposições for verdadeira.
+                    </p>
+                    
+                    <p>
+                      <em>Exemplo:</em> Se ou o avião está parado ou está a voar, só uma das condições pode ser verdadeira.
+                    </p>
+
+                  </div>
+                </div>
+              </section>
+
+              <section id="condicional-tabela">
+                <h4><u>Condicional</u></h4>
+                <div class="tabela-lado">
+                  <table border="1">
+                    <thead>
+                      <tr>
+                        <th>P</th>
+                        <th>Q</th>
+                        <th>P → Q</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>V</td>
+                      </tr>
+                      <tr>
+                        <td>V</td>
+                        <td>F</td>
+                        <td>F</td>
+                      </tr>
+                      <tr>
+                        <td>F</td>
+                        <td>V</td>
+                        <td>V</td>
+                      </tr>
+                      <tr>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>V</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
+
+                  <div class="tabela-texto">
+                    <p>
+                      A condicional de P e Q é falsa quando a proposição <strong>antecedente</strong> (P) for verdadeiro e a proposição <strong>consequente</strong> for falsa.
+                    </p>
+                    
+                    <p>
+                      <em>Exemplo:</em> Se "se chover, então fica molhado", é possível que o chão esteja molhado sem ter chovido (podem ter derramado água no chão).
+                    </p>
+
+                    <p>
+                      Aqui, chover é condição necessária para o chão estar molhado, mas não suficiente.
+                    </p>
+
+                  </div>
+                </div>
+              </section>
+
+              <section id="bicondicional-tabela">
+                <h4><u>Bicondicional</u></h4>
+                <div class="tabela-lado">
+                  <table border="1">
+                    <thead>
+                      <tr>
+                        <th>P</th>
+                        <th>Q</th>
+                        <th>P ↔ Q</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>V</td>
+                      </tr>
+                      <tr>
+                        <td>V</td>
+                        <td>F</td>
+                        <td>F</td>
+                      </tr>
+                      <tr>
+                        <td>F</td>
+                        <td>V</td>
+                        <td>F</td>
+                      </tr>
+                      <tr>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>V</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
+
+                  <div class="tabela-texto">
+                    <p>
+                      A bicondicional de P e Q é verdadeira quando ambas as proposições forem verdadeiras ou falsas.
+                    </p>
+                    
+                    <p>
+                      <em>Exemplo:</em> Se "água é equivalente a H₂O", se não for água, não é H₂O, e vice-versa. 
+                    </p>
+
+                    <p>
+                      Aqui, ser água é condição necessária e suficiente para ser H₂O, e vice-versa.
+                    </p>
+
+                  </div>
+                </div>
               </section>
 
             </section>

@@ -455,3 +455,20 @@ tbody{
     margin: 0 auto 14px;
   }
 }
+
+.tabela-lado {
+  display: flex;
+  align-items: flex-start;  /* alinha pelo topo */
+  gap: 30px;
+  flex-wrap: wrap;          /* no telemóvel, a div passa para baixo da tabela */
+  margin: 16px 0;
+}
+
+.tabela-lado table {
+  flex: 0 0 auto;           /* a tabela mantém a largura dela */
+}
+
+.tabela-texto {
+  flex: 1;                  /* ocupa o resto da largura */
+  min-width: 240px;
+}
